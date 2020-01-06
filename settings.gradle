@@ -1,0 +1,2 @@
+include ':app', ':networkmodule', ':databasemodule'
+rootProject.name='GuestAppNew'
