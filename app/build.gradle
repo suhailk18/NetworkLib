@@ -1,10 +1,25 @@
-apply plugin: 'com.android.application'
+apply plugin: 'com.android.library'
+apply plugin: 'com.novoda.bintray-release'
+publish {
+
+    def groupProjectID = 'com.digivalet.guestapp'
+    def artifactProjectID = 'com.digivalet.guestapp'
+    def publishVersionID = '1.0'
+
+    userOrg = 'suhailk18'
+    repoName = ' NetworkLib'
+    groupId = groupProjectID
+    artifactId = artifactProjectID
+    publishVersion = publishVersionID
+    desc = 'description'
+    website = 'https://github.com/suhailk18/NetworkLib'
+}
 
 android {
     compileSdkVersion 29
     buildToolsVersion "29.0.1"
     defaultConfig {
-        applicationId "com.digivalet.guestapp"
+
         minSdkVersion 15
         targetSdkVersion 29
         versionCode 1
@@ -38,7 +53,11 @@ dependencies {
 
     implementation 'com.google.code.gson:gson:2.8.6'
 
-    implementation project(path: ':networkmodule')
-    implementation project(path: ':databasemodule')
+   // implementation project(path: ':networkmodule')
+    //implementation project(path: ':databasemodule')
+    //noinspection GradleCompatible
     implementation 'com.android.support:design:28.0.0'
+
+    implementation 'com.github.suhailk18:NetworkLib:v1.0'
+
 }

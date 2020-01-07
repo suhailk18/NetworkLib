@@ -57,6 +57,8 @@ public class SplashActivity extends AppCompatActivity {
 
 			}
 		});
+
+
 	}
 
 	void downloadFiles() {
@@ -134,6 +136,7 @@ public class SplashActivity extends AppCompatActivity {
 
 			// other 'case' lines to check for other
 			// permissions this app might request.
+				//dacfbbc0d5fb7c318e70b60cd8791c5861cac228
 		}
 	}
 }
